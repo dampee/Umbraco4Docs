@@ -42,7 +42,7 @@ The Image Cropper property editor displays an editor to allow backoffice users t
 A simple textbox to input a numeric value
 
 ##Macro Container
-The Macro Container Data type allows content editors to insert one or more macro's in a content page. Settings for the Macro Container are which macro's are allowed, the maximum number of macro's that can be inserted, and the prefered width and height of the Macro Container. A typical use case for the macro container is to allow content editors to insert sidebar widgets.
+The Macro Container Data type allows content editors to insert one or more macros in a content page. Settings for the Macro Container are which macros are allowed, the maximum number of macros that can be inserted, and the prefered width and height of the Macro Container. A typical use case for the macro container is to allow content editors to insert sidebar widgets.
 
 ##[Media Picker](Media-Picker.md)
 The media picker opens a simple modal to pick a specific media item from the media tree. The value saved is the selected media ID.
@@ -111,11 +111,11 @@ The Ultimate picker is a flexible document picker where you can set the root for
 ##[UltraSimpleEditor](Simple-Editor.md)
 A very scaled down editor which only has bold, italic and link - It does not render the HTML live like the richtext editor, but shows the raw HTML and simply surrounds the selected text with the limited HTML tag buttons at the top.
 
-##umbraco usercontrol wrapper
-The umbraco usercontrol wrapper datatype enables to create a custom Data type that references a .NET User Control, given that the User Control dll has been copied to the /bin folder and the User Control ascx file has been copied to the /usercontrols directory
+##Umbraco usercontrol wrapper
+The Umbraco usercontrol wrapper datatype enables to create a custom Data type that references a .NET User Control, given that the User Control dll has been copied to the /bin folder and the User Control ascx file has been copied to the /usercontrols directory
 
 ##[Upload field](Upload.md)
-Adds an upload field, which allows documents or images to be uploaded to umbraco. This does not add them to the media library, they are simply added to the document data.
+Adds an upload field, which allows documents or images to be uploaded to Umbraco. This does not add them to the media library, they are simply added to the document data.
 
 ##[XPath CheckBoxList](XPath-CheckBox-List.md)
 Uses an XPath expression to select nodes from the content tree to use as the checkbox options. The advantage of using XPath to define the nodes to use is that it allows a granular selection throughout the whole tree.

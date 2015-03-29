@@ -20,6 +20,18 @@ Service for doing CRUD type operations for `Dictionary` and `Language` objects.
 ##[MediaService](MediaService.md)
 Service for doing CRUD type operations for `Media` objects.
 
+##[MemberService](MemberService.md)
+Service for doing CRUD type operations for `Member` objects.
+
+##[MemberTypeService](MemberTypeService.md)
+Service for doing CRUD type operations for `MemberType` objects.
+
+##[MemberGroupService](MemberGroupService.md)
+Service for doing CRUD type operations for `MemberGroup` objects / Member Roles.
+
+##[RelationService](RelationService.md)
+Service for doing CRUD type operations for `Relation` and `RelationType` objects.
+
 ##[SectionService](SectionService.md)
 
 **Introduced in Umbraco 7.0.0+**

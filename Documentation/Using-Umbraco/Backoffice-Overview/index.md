@@ -2,7 +2,7 @@
 These items are common terms and concepts that are used throughout the Umbraco backoffice.
 
 ### [Document Type](Document-Types/index.md)
-Document types define the types of page/nodes that backoffice users can create in the content tree. Each document type contains different properties or fields.
+Document types define the types of pages/nodes that backoffice users can create in the content tree. Each document type contains different properties or fields.
 Each field has a specific data type e.g. text, number, ... 
 
 ###Content
@@ -29,7 +29,8 @@ A node is an item in the Content tree in the Umbraco backoffice content section
 ###User
 A user is someone who has access to the **Umbraco backoffice** and is not to be confused with Member.
 
-### [Macros](../../Templating/Macros/index.md)
+### [Macros](../../Reference/Templating/Macros/index.md)
+
 A macro is a reusable piece of functionality that you can re-use throughout your site. Macros can be configured with parameters and be inserted into a Rich Text Editor. Your can define what macros are available for your editors to insert in to the rich text editor. When an editor inserts a macro into the rich text editor it will prompt them to fill out any of the defined parameters for the macro.
 
 ### [Templates / Layouts / Masterpages](../../Reference/Templating/index.md)
