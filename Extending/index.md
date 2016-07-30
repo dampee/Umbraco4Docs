@@ -1,9 +1,5 @@
 #Extending Umbraco
 
-##[Backoffice API documentation](http://umbraco.github.io/Belle/#/api)
-
-Angular API reference for the Umbraco backoffice (Belle).
-
 ##[Dashboards](Dashboards/index.md)
 
 A Dashboard is a component for displaying elements on the right-hand side of the backoffice UI area.
@@ -34,7 +30,7 @@ This section will describe how to work with and create Parameter Editors.
 
 The Umbraco back office can be configured so that the user interface runs in the user's native language. This is made possible with community generated language files, if your language is not currently supported, why not help to add support?
 
-##[Packaging](Packaging/index.md)
+Packaging
 
 Information on the packaging manifest format and how assets should be packaged as a zip file for easy distribution
 **(coming soon)**

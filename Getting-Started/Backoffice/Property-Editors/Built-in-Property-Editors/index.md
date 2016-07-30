@@ -9,12 +9,12 @@ Displays a list of preset values as a list of checkbox controls
 Adds a list of approved colours which can be selected by clicking.
 
 ##[Content Picker](Content-Picker.md)
-The content picker opens a simple modal to pick a specific page from the content structure. 
+The content picker opens a simple modal to pick a specific page from the content structure.
 
-##Date
+##[Date](Date.md)
 Displays a calendar UI for selecting dates
 
-##Date/Time
+##[Date/Time](Date-Time.md)
 Displays a calendar UI for selecting dates and time
 
 ##[Dropdown list](DropDown-List.md)
@@ -60,7 +60,7 @@ The media picker displays the current selected media and provides the option to 
 
 ##Member Group Picker
 
-##Member Picker
+##[Member Picker](Member-Picker.md)
 
 ##[Multinode Treepicker](Multinode-Treepicker.md)
 The multinode treepicker data type allows content editors to choose multiple nodes in the content or media trees.
@@ -85,7 +85,7 @@ Related Links allows an editor to easily add an array of links. These can either
 ##Textarea
 A simple textarea control to input text.
 
-##Textbox
+##[Textbox](Textbox.md)
 A normal html input text field.
 
 ##[True/False](True-False.md)

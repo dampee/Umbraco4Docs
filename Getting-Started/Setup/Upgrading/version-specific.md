@@ -79,7 +79,7 @@ NuGet will do the following for you but if you're upgrading manually:
 * Delete `bin/Microsoft.Web.Helpers.dll`
 * Delete `bin/Microsoft.Web.Mvc.FixedDisplayModes.dll`
 * Delete `bin/System.Net.Http.dll`
-* Delete `bin/System.Net.Http.*.dll` (all dll files starting with `System.Net.Http`)
+* Delete `bin/System.Net.Http.*.dll` (all dll files starting with `System.Net.Http`) **EXCEPT** for `System.Net.Http.Formatting.dll`
 * Delete `bin/umbraco.XmlSerializers.dll`
 * In your `web.config` file, add this in the `appSetting` section: `<add key="owin:appStartup" value="UmbracoDefaultOwinStartup" />`
 
@@ -94,3 +94,12 @@ Other considerations:
   * For general ASP.Net MVC 5 upgrade details see: [http://www.asp.net/mvc/overview/releases/how-to-upgrade-an-aspnet-mvc-4-and-web-api-project-to-aspnet-mvc-5-and-web-api-2](http://www.asp.net/mvc/overview/releases/how-to-upgrade-an-aspnet-mvc-4-and-web-api-project-to-aspnet-mvc-5-and-web-api-2) 
 * It is not required that you merge the changes for the Examine index paths in the ExamineIndex.config file. However, if you do, your indexes will be rebuilt on startup because Examine will detect that they don’t exist at the new location.
 * It's highly recommended to clear browser cache - the ClientDependency version is automatically bumped during install which should force browser cache to refresh, however in some edge cases this might not be enough.
+
+##Version 7.4.0
+For manual upgrades: 
+
+* Copy the new folder `~/App_Plugins/ModelsBuilder` into the site
+* Do not forget to merge `~/Config/trees.config` and `~/Config/Dashboard.config` - they contain new and updated entries that are required to be there
+  * If you forget `trees.config` you will either not be able to browse the Developer section or you will be logged out immediately when trying to go to the developer section
+* You may experience an error saying `Invalid object name 'umbracoUser'` - this can be fixed by [clearing your cookies on localhost](http://issues.umbraco.org/issue/U4-8031)
+  

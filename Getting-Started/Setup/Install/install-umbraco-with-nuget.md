@@ -2,6 +2,14 @@
 
 _Follow these steps to do a full install of Umbraco with NuGet._
 
+##Abbreviated version
+- You will get the best results if you install Umbraco in a **blank** web application Visual Studio project using .net versions higher than 4.5.0 and lower than 5.0.0.
+ - In VS12: use ASP.NET Empty Web Application
+ - In VS13/15: use ASP.NET Web Application with an Empty template
+- Umbraco can in most cases **not** be installed in an existing MVC/Webforms project
+- When asked if you want to overwrite config files, choose **"Yes"** to overwrite them
+- ReSharper 8 (last released in 2014) might have problems, try suspending it or upgrading to ReSharper version 8.2.3
+
 ##Note for ReSharper users
 We're aware of an ongoing issue with ReSharper 8 which interferes with the NuGet installation and causes it to fail (you can help getting this resolved by voting for [this issue][1]).  
 The advise for now is when you're installing Umbraco: suspend ReSharper through Tools > Options > ReSharper > Suspend Now.   
@@ -28,7 +36,7 @@ To install Umbraco we need a Visual Studio solution to install it in.
 If you're installing Umbraco 7+ then you need to choose .NET Framework 4.5 or 4.5.1 here.  
 For Umbraco 6 you can still choose .NET Framework 4, but 4.5 and 4.5.1 also work.
 
-###Visual Studio 2012  
+###Visual Studio 2012
 Go to **File > New Project** and pick ASP.NET Web Application. Click **OK** and then choose one of the following:
 
 * ASP.NET Empty Web Application
@@ -41,7 +49,7 @@ It's important to pick only one of those as other templates cause errors beyond 
 
 ![](images/NuGet/new-project-vs2012.png)
 
-###Visual Studio 2013
+###Visual Studio 2013/2015
 Go to **File > New Project** and pick an ASP.NET  Web Application.    
 
 ![](images/NuGet/new-project-vs2013-1.png)
@@ -50,11 +58,9 @@ On the next step, select the **Empty** template. It's important to to pick **emp
 
 ![](images/NuGet/new-project-vs2013-2.png)
 
-Or you can use one of the VS2012 templates:
+Or you can use the VS2012/2013/2015 template:
 
 * ASP.NET Empty Web Application
-* ASP.NET Web Forms Application
-* ASP.NET MVC 4 Web Application
 
 Again, if there's a next step, then choose **Empty** to prevent conflicts.
 
@@ -98,9 +104,7 @@ You can now run the site like you would normally in Visual Studio (using **F5** 
 Follow the installation wizard and after a few easy steps and choices you should get a message saying the installation was a success.
 
 ##Post installation
-One important recommendation is to always remove the `install` folder immediately after installing Umbraco and never to upload it to a live server.
-
-You should also note that the Umbraco nuget package adds a build step to always include the Umbraco folders when you deploy using Web One-Click Publish with Visual Studio.  
+You should note that the Umbraco nuget package adds a build step to always include the Umbraco folders when you deploy using Web One-Click Publish with Visual Studio.  
 You can see these folders in `packages/UmbracoCms x.y.z/build/UmbracoCms.targets`  
 Should you need to exclude any of these folders or content, you can add a target to your `.pubxml` files in the `properties/Publish` folder. For instance if you need to exclude json data a plugin generates during production.
 
