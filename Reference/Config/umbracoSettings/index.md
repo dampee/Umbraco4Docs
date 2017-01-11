@@ -161,7 +161,7 @@ Umbraco can send out email notifications, set the sender email address for the n
 
 **EnsureUniqueNaming**
 
-Umbraco comes with a build-in action handler that ensures that 2 pages does not get identical urls. In case of identical names, the handler will attach a counter to the duplicate name.
+Umbraco comes with a built-in action handler that ensures that 2 pages does not get identical urls. In case of identical names, the handler will attach a counter to the duplicate name.
 
         <!-- if true umbraco will ensure that no page under the same parent has an identical name -->
         <ensureUniqueNaming>True</ensureUniqueNaming>
@@ -533,6 +533,10 @@ This section configures...
 
 **disableFindContentByIdPath**: when true, urls such as /1234 do *not* find content with ID 1234.
 
+**disableRedirectUrlTracking**: when you move and rename pages in Umbraco, 301 permanent redirects are automatically created, set this to true if you do not want this behavior 
+
+**Note** The URL tracking feature (and thus, this setting) is only available on Umbraco 7.5.0 and higher.
+
 **umbracoApplicationUrl**: defines the Umbraco application url, ie how the server should reach itself. By default, Umbraco will guess that url from the first request made to the server. Use that setting if the guess is not correct (because you are behind a load-balancer, for example). Format is: "http://www.mysite.com/umbraco" ie it needs to contain the scheme (http/https), complete hostname, and umbraco path.
 
     <web.routing
@@ -540,5 +544,6 @@ This section configures...
         internalRedirectPreservesTemplate="false" 
         disableAlternativeTemplates="false"
         disableFindContentByIdPath="false"
+        disableRedirectUrlTracking="false"
         umbracoApplicationUrl=""
     />

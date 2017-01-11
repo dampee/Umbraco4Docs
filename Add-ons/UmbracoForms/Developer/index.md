@@ -16,3 +16,14 @@ See how you can fetch and display record data from your razor macros
 ##[Extending](Extending/index.md)##
 Learn how you can extend Umbraco Forms with your own custom providers
 
+##[Configuration](Configuration/index.md)##
+Learn about some of the configuration options that are available to you to modify how Umbraco Forms works.
+
+##[Field Types](Field-Types/index.md)##
+Learn about the default Field Types that are shipped with Umbraco Forms and any specific details how these work.
+
+##[Magic strings](Magic-Strings/index.md)##
+Learn about the magic string formats that Umbraco Forms supports, that can retrieve information from various sources such as Session, Cookies, Umbraco Page Fields, Member fields, Form fields to use in workflows.
+
+##[Storing Form Files with IFileSystem](IFileSystem/index.md)##
+Learn how you can implement a custom IFileSystem to store the Forms, Workflows, PreValues and other JSON based files to suit your needs. Available in Umbraco Forms 4.4.0 and greater
