@@ -10,6 +10,16 @@ _Lots of examples of using various techniques to render data in a view_
 
 	@Umbraco.Field("bodyContent", insertBefore : "<h2>", insertAfter : "</h2>")
 
+## Render special values
+You can easily access special values using a special syntax such as
+        @querystringKey
+        %sessionKey
+        #dictionaryItem
+
+    <input type="search" value="@Umbraco.Field("q")" />
+
+	@Umbraco.Field("My.DictionaryItem")
+
 ## Rendering the raw value of a field from IPublishedContent
 
 	@Model.Content.Properties["bodyContent"].Value
