@@ -10,7 +10,7 @@ versionFrom: 7.0.0
 
 Displays a list of preset values as a list of checkbox controls.
 
-*NOTE: Unlike other property editors, the Prevalue IDs are not directly accessible in Razor*
+_NOTE: Unlike other property editors, the Prevalue IDs are not directly accessible in Razor_
 
 ## Data Type Definition Example
 

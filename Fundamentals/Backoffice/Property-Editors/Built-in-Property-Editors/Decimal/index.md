@@ -14,7 +14,7 @@ versionFrom: 8.0.0
 
 In the example above the possible values for the input field would be [8, 8.5, 9, 9.5, 10]
 
-*All other values will be removed in the content editor when saving or publishing.*
+_All other values will be removed in the content editor when saving or publishing._
 
 If the value of **Step Size** is not set then all decimal values between 8 and 10 is possible to input in the content editor.
 
@@ -51,7 +51,7 @@ See the example below to see how a value can be added or changed programmaticall
     // Get the page using the GUID you've defined
     var content = contentService.GetById(guid); // ID of your page
 
-    // Set the value of the property with alias 'myDecimal'. 
+    // Set the value of the property with alias 'myDecimal'.
     content.SetValue("myDecimal", 3);
 
     // Save the change
@@ -64,7 +64,7 @@ Although the use of a GUID is preferable, you can also use the numeric ID to get
 ```csharp
 @{
     // Get the page using it's id
-    var content = contentService.GetById(1234); 
+    var content = contentService.GetById(1234);
 }
 ```
 

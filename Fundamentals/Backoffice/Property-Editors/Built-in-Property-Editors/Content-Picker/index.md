@@ -59,13 +59,13 @@ See the example below to see how a value can be added or changed programmaticall
     // Get the page using the GUID you've defined
     var content = contentService.GetById(guid); // ID of your page
 
-    // Get the page you want to assign to the content picker 
+    // Get the page you want to assign to the content picker
     var page = Umbraco.Content("665d7368-e43e-4a83-b1d4-43853860dc45");
-    
+
     // Create an Udi of the page
     var udi = Udi.Create(Constants.UdiEntityType.Document, page.Key);
 
-    // Set the value of the property with alias 'featurePicker'. 
+    // Set the value of the property with alias 'featurePicker'.
     content.SetValue("featurePicker", udi.ToString());
 
     // Save the change
@@ -78,7 +78,7 @@ Although the use of a GUID is preferable, you can also use the numeric ID to get
 ```csharp
 @{
     // Get the page using it's id
-    var content = contentService.GetById(1234); 
+    var content = contentService.GetById(1234);
 }
 ```
 

@@ -68,7 +68,7 @@ See the example below to see how a value can be added or changed programmaticall
     // Get the page using the GUID you've defined
     var content = contentService.GetById(guid); // ID of your page
 
-    // Set the value of the property with alias 'color'. 
+    // Set the value of the property with alias 'color'.
     // The value set here, needs to be one of the prevalues on the Color Picker
     content.SetValue("color", "38761d");
 
@@ -82,7 +82,7 @@ Although the use of a GUID is preferable, you can also use the numeric ID to get
 ```csharp
 @{
     // Get the page using it's id
-    var content = contentService.GetById(1234); 
+    var content = contentService.GetById(1234);
 }
 ```
 
